@@ -1,0 +1,159 @@
+.all-features-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 100px 15%;
+  background-color: hsl(218, 28%, 13%);
+
+  padding: 0% 5% 0% 5%;
+}
+.productive-container {
+  padding: 15% 5%;
+  display: flex;
+  background-color: hsl(218, 28%, 13%);
+  align-items: center;
+  gap: 7%;
+}
+.stay-productive-img {
+}
+.productive-content {
+  display: grid;
+  color: white;
+}
+.productive-title {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 55px;
+}
+.productive-context {
+  font-family: "OpenSans";
+  font-size: 19px;
+}
+.productive-highlight {
+  font-family: "OpenSans";
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  width: fit-content;
+  padding-bottom: 5px;
+  color: hsl(176, 68%, 64%);
+}
+.comment-container {
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+  display: flex;
+  padding: 2% 5%;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  background-image: url("../assets/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position-x: 8%;
+  padding-bottom: 30%;
+}
+.comment {
+  display: grid;
+  width: 330px;
+  padding: 30px 25px;
+  background-color: hsl(219, 30%, 18%);
+  border-radius: 5px;
+}
+.comment-data {
+  font-family: "OpenSans";
+  line-height: 1.5em;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.profile {
+  border-radius: 75px;
+  width: 35px;
+}
+.designation-container {
+  font-family: "OpenSans";
+}
+.name {
+  font-weight: 600;
+}
+.designation {
+  font-size: 10px;
+}
+
+@media (min-width: 679px) {
+  .container {
+    background: hsl(217, 28%, 15%);
+  }
+  .productive-highlight {
+    cursor: pointer;
+  }
+  .productive-highlight:hover {
+    color: white;
+    border-color: white;
+  }
+  .productive-highlight:hover img {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (max-width: 678px) {
+  .container {
+    background: linear-gradient(
+      to bottom,
+      hsl(217, 28%, 15%) 0% 23%,
+      hsl(218, 28%, 13%) 23% 80%
+    );
+  }
+  .all-features-container {
+    gap: 80px;
+  }
+  .productive-container {
+    display: grid;
+    padding: 40% 5%;
+    gap: 45px;
+  }
+  .stay-productive-img {
+    width: 100%;
+  }
+  .productive-title {
+    font-size: 135%;
+  }
+  .productive-context {
+    font-size: 95%;
+  }
+  .productive-highlight {
+    font-size: 90%;
+    gap: 5px;
+  }
+  .comment-container {
+    padding: 8% 5%;
+    gap: 40px;
+    background-size: 9%;
+    background-position-y: 1%;
+    margin-bottom: 80%;
+  }
+  .comment {
+    width: 100%;
+    padding: 10% 5%;
+  }
+  .comment-data {
+    font-size: 88%;
+    line-height: 1.8;
+  }
+  .profile-container {
+    margin-top: 7%;
+    gap: 15px;
+  }
+  .profile {
+    width: 15%;
+  }
+  .designation-container {
+    display: grid;
+    gap: 5px;
+  }
+}

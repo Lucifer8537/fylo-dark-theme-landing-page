@@ -1,0 +1,77 @@
+.main-container {
+  display: grid;
+  padding: 0% 5%;
+  justify-content: center;
+}
+.introImg {
+}
+.into-container {
+  color: white;
+  width: 70%;
+  text-align: center;
+}
+.intro-title {
+  font-family: "Raleway";
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.intro-context {
+  font-family: "OpenSans";
+  font-size: 20px;
+  padding: 0% 18%;
+  margin-bottom: 5%;
+}
+.intro-button {
+  font-family: "OpenSans";
+  color: white;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border: 1px solid transparent;
+  font-size: 20px;
+  padding: 10px 90px;
+  border-radius: 25px;
+}
+
+@media (min-width: 679px) {
+  .main-container {
+    background-image: url("../../assets/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+    padding-bottom: 14%;
+  }
+  .intro-button {
+    cursor: pointer;
+  }
+  .intro-button:hover {
+    background: hsl(176, 68%, 64%);
+  }
+}
+@media (max-width: 678px) {
+  .introImg {
+    width: 100%;
+    margin-top: 10% !important;
+  }
+  .into-container {
+    width: 100%;
+  }
+  .intro-title {
+    font-size: 170%;
+    margin-top: 10%;
+  }
+  .intro-context {
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5em;
+    margin-bottom: 10%;
+  }
+  .main-container {
+    padding-bottom: 40%;
+    background-image: url("../../assets/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 40%;
+  }
+}

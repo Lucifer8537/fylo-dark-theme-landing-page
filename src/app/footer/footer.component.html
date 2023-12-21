@@ -1,0 +1,60 @@
+<div class="footer-container">
+  <img src="../../assets/logo.svg" alt="logo" class="logo" />
+  <div class="footer-bottom-container">
+    <div class="info-container-1">
+      <div class="info" *ngFor="let i of infoList1">
+        <img src="{{ i.icon }}" class="info-icon" />
+        <div class="info-value">
+          {{ i.value }}
+        </div>
+      </div>
+    </div>
+    <div class="info-container-2">
+      <div class="info" *ngFor="let i of infoList2">
+        <img src="{{ i.icon }}" class="info-icon" />
+        <div class="info-value">
+          {{ i.value }}
+        </div>
+      </div>
+    </div>
+    <div class="option-container">
+      <div *ngFor="let o of option1" class="option">{{ o }}</div>
+    </div>
+    <div class="option-container">
+      <div *ngFor="let o of option2" class="option">{{ o }}</div>
+    </div>
+    <div class="footer-main-social">
+      <div class="social-icon">
+        <i class="icon fa-brands fa-facebook-f"></i>
+      </div>
+      <div class="social-icon">
+        <i class="icon fa-brands fa-twitter"></i>
+      </div>
+      <div class="social-icon">
+        <i class="icon fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <div class="dialog-container">
+    <div class="dialog-title">Get early access today</div>
+    <div class="dialog-context">
+      It only takes a minute to sign up and our free starter tier is extremely
+      generous. If you have any questions, our support team would be happy to
+      help you.
+    </div>
+    <div class="dialog-input-container">
+      <input
+        type="email"
+        class="dialog-input"
+        [(ngModel)]="inputValue"
+        placeholder="email@example.com"
+      />
+      <button (click)="freeBtnClick()" class="free-btn">
+        Get Started For Free
+      </button>
+    </div>
+    <div class="error" [ngStyle]="{ opacity: showError }">
+      Please enter a valid email address
+    </div>
+  </div>
+</div>
